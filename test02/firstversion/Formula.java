@@ -9,6 +9,10 @@ package firstversion;
 public class Formula {
 	private final int OPERATION_NUMBER = 50;//习题的数量
 	private Equation[] equation = new Equation[OPERATION_NUMBER];//保存习题的对象数组
+	
+	public Equation getEquation(int i) {
+		return equation[i];
+	}
 
 	public void generateEquation() {//生成习题
 		// TODO: implement
